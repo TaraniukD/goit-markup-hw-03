@@ -118,12 +118,13 @@ color: var(--title-text-color) ;
 
 /* Главная секция */
 .mainsection {
+    padding: 200px 0;
     background: var(--background-footer-color);
     text-align: center;
 }
 .mainsection .title {
-    margin-top: 0;
-    margin-bottom: 30px;
+    margin: 0 auto 30px auto;
+    width: 696px;
     color: var(--Wite-text-color);
     font-weight: 900;
         font-size: 44px;
@@ -185,9 +186,13 @@ position: absolute;
 .feature-list {
     display: flex;
 }
+.feature-list .item {
+    width: 270px;
+}
 .feature-list .item:not(:last-child) {
     margin-right: 30px;
 }
+
 .feature-list .title {
     margin-top: 0;
     margin-bottom: 10px;
@@ -209,18 +214,13 @@ position: absolute;
 .type-work .item:not(:last-child) {
     margin-right: 30px;
 }
-
 /* наша команда*/
 .team {
-    background-color: var(--background-main-color);
-   
-   
-}
-.team .conteiner {
     padding-top: 94px;
     padding-bottom: 94px;
-    margin-bottom: 0;
+    background-color: var(--background-main-color);  
 }
+
 .team .list {
     display: flex;
 }
@@ -239,8 +239,7 @@ position: absolute;
         text-align: center;
 }
 .team-text {
-    margin-top: 0;
-    margin-bottom: 30px;
+    margin: 0;
        color: var(--prymary-text-color);
         font-weight: 400;
         font-size: 16px;
@@ -248,10 +247,10 @@ position: absolute;
         letter-spacing: 0.03em;
         text-align: center;
 }
-
-.team .img {
-    margin-bottom: 30px;
+.team-bloc {
+padding: 30px 0;
 }
+
 
 /* FOOTER */
 .footer {
@@ -363,7 +362,7 @@ position: absolute;
 }
 
 .description {
-    margin: 20px 24px;
+    padding: 20px 24px;
 }
 .portfolio .title {
     margin-top: 0;
